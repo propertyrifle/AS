@@ -1,0 +1,651 @@
+=/* PROPERTY CSS */
+/* MADE BY Property#2443 */
+/* UI SCALE - 0.6 | RESOLUTION - 1920x1080 */
+
+/*------------------------------------------------*/
+
+@font-face {
+    font-family: main;
+    src: url(https://raw.githubusercontent.com/propertyrifle/fonts/blob/main/BankaiDemoVersion.ttf)
+}
+
+/*------------------------------------------------*/
+
+@keyframes legacyloader {
+    from {
+        opacity: 0.7;
+        font-size: 30px;
+    }
+}
+
+#initLoader {
+    background-image: url('https://cdn.discordapp.com/attachments/978545000902180904/984003113910407188/littletown_night_art.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: all;
+    opacity: 0.5;
+}
+
+#lC-cont {
+    display: none;
+}
+
+.lds-ring {
+    display: none;
+}
+.lds-ring > div {
+    display: none;
+}
+div#loadTipsHolder {
+    display: none;
+}
+
+#loadEditrBtn {
+    display: none;
+}
+
+#instructions > *[style*="transform:scale(1.4);"] {
+    transform: scale(0.7) !important; 
+}
+
+#instructions > * > .lds-ring {
+    width: unset;
+    height: unset;
+}
+
+#instructions > * > .lds-ring > * {
+    display: none;
+}
+
+#instructions {
+    font-size: 0px;
+    animation: none
+}
+
+#instructions:after {
+    font-size: 32px;
+    content: 'GO OUTSIDE';
+    animation: grow .8s infinite alternate
+}
+
+div#windowHolder[style="display: none;"]{
+    display:block !important;
+    background:rgba(0,0,0,0);
+    transform:scale(0);
+}
+div#windowHolder[style="display: block;"]{
+    background:rgba(0,0,0,0);
+    transform:scale(1);
+}
+
+/* class picker */
+
+#hiddenClasses {
+    display:flex !important;
+    flex-direction:row;
+    position:fixed;
+    left:90%;
+    bottom: 27.4%;
+    transform:translate(-50%);
+    margin-right:10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"],#menuClassPicker5[onclick="selectClass(5)"],#menuClassPicker6[onclick="selectClass(6)"],#menuClassPicker12[onclick="selectClass(12)"] {
+	display:block;
+	width:60px;
+	height:60px;
+	pointer-events:auto;
+	image-rendering:pixelated;
+	margin-right:10px;
+    filter:saturate(1);
+    transition:filter 0.5s;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover,#menuClassPicker5[onclick="selectClass(5)"]:hover,#menuClassPicker6[onclick="selectClass(6)"]:hover,#menuClassPicker12[onclick="selectClass(12)"]:hover, {
+    cursor:pointer;
+    filter:saturate(1) drop-shadow(0 0 20px var(--accent));
+    transition:filter 0.5s;
+}
+
+ /* end */
+
+#chatInput::placeholder{
+    color: transparent;
+}
+
+#chatInputHolder::before{
+    content: "Krunker Sucks"; /* <----- <----- <----- <----- <----- CHAT MESSAGE HERE <----- <----- <----- <----- <----- */
+    position: absolute;
+    color: #fff;
+    bottom: 17px;
+    left: 14px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#chatHolder:focus-within #chatInputHolder::before{
+    opacity: 0;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 6px;
+    display: none;
+}
+
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+/* ADD MORE AFTER */
+
+.weapKey {
+    display:none;
+}
+.weapIcon {
+    transform: translate(-50%,-50%);
+    position:fixed;
+    left:50%;
+    bottom:-1%;
+    opacity:0 !important;
+    transition-duration: .25s;
+}
+.weapIcon[style*="opacity: 1;"] {
+    opacity:1 !important;
+}
+.weapIcon[style*="opacity: 0.7;"] {
+    transform:translate(-50%,-50%) translateY(80px);
+}
+
+#uiBase.onDeathScrn #weapDisplay {
+    display:none !important;
+}
+
+#ammoDisplay {
+    transform:unset;
+    background-color:transparent;
+    position:fixed;
+    left:calc(50% - 40px);
+    bottom:calc(50% - 60px);
+    height:8px;
+    width:80px;
+    padding:0;
+    margin:0;
+}
+
+#ammoVal {
+    position:fixed;
+    right:12px;
+    bottom:25px;
+}
+
+#ammoIcon,#ammoMax {
+    display:none;
+}
+
+#chatList {
+    background-color: transparent;
+}
+
+#chatInputHolder {
+    background-color: transparent;
+    border: 0px solid #fff;
+    color: #fff;
+}
+
+#chatInput {
+    background-color: transparent;
+    border: 0px solid #fff;
+    color: #fff;
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+#streakCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 50%;
+    font-size: 18px;
+    background-color: transparent;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+#killCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 90%;
+    left: 48.6%;
+    font-size: 16px;
+    background-color: transparent;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+#deathCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 90%;
+    left: 51.4%;
+    font-size: 16px;
+    background-color: transparent;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.button { 
+    border: hidden ! important;
+}
+
+.rankClck,#menuClassNameTag [src*="./img/ranked/"],.leaderItem [src*="./img/ranked/"],#endTable [src*="./img/ranked/"] {
+    display:none !important;
+}
+
+#loadInfoLHolder, #loadGamNm, #loadInfoRHolder {
+    display: none; 
+}
+
+.adsbygoogle adsbygoogle-noablate {
+  display: none !important;
+}
+
+div#aContainer {
+    display: none!important;
+    content: none;!important;
+}
+
+#curGameInfo:after {
+  content: 'SYD Sweat' ;
+  position:relaitive!important;
+  left:0px;
+  color:#da6969;
+  visibility:visible!important;
+}
+
+#rankedSoonTm {
+    display:none!important;
+}
+
+.button {
+	top: 0px;
+	background-color:transparent;
+}
+
+#menuItemContainer {
+    width: 2600px;
+    height: min-content;
+    top: 97%;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row
+}
+#menuItemContainer {
+	background-color: transparent;
+	height: 0px;
+    opacity: 1
+}
+
+.menBtnIcn {
+	opacity: 0
+}
+
+#termsInfo {
+    background-color: rgba(0,0,0,.5);
+    padding: 5px 15px 15px 20px;
+    border-top-left-radius: 6px;
+    margin-right: -15px;
+    display: none!important;
+}
+
+#mapInfoHolder {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;
+    display: none!important;
+}
+
+#tlInfHold {
+    z-index: 20;
+    position: absolute;
+    left: 138px;
+    top: 78px;
+    display: none!important;
+}
+
+#mainLogo {
+	display: none!important;
+}
+#seasonLabel {
+	display: none!Important;
+}
+
+.headerBarRight {
+	display: none!important;
+}
+
+#uiBase.onMenu #voiceDisplay {
+	display: none!important;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 0px;
+    bottom: 520px;
+}
+
+#chatSwitchHolder {
+    display: none!important;
+}
+
+.headerBarRight .verticalSeparator {
+	display: none;
+}
+
+#menuLevelIcon {
+	display: none;
+}
+
+#menuLevelText {
+	font-size: 16px;
+	text-transform: var(--text-transform);
+}
+
+#mailIcon:hover {
+	opacity: 1;
+	transform: none
+}
+
+#mLevelCont {
+	background-color: transparent;
+	text-shadow: none;
+	border-bottom-right-radius: 0;
+}
+
+#newsHolder {
+	display: none;
+}
+
+#menuClassSubtext {
+    z-index: 100;
+    color: rgba(255,255,255,.5);
+    font-size: 17px;
+    margin-bottom: -3px;
+}
+
+#menuClassName {
+	display: none;
+}
+
+#classPreviewCanvas {
+    margin-bottom: 122px;
+}
+
+#bubbleContainer {
+    z-index: 99999;
+    position: absolute;
+    top: calc(50% - 130px);
+    right: 420px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    transform: scale(0)
+}
+
+.speechBox {
+	display: none;
+}
+
+/* MENUBUTTONS */
+/* MENUBUTTONS */
+/* MENUBUTTONS */
+/* MENUBUTTONS */
+
+#aMerger {
+	left: 1000px;
+	display: none;
+	font: 0px;
+}
+
+#menuItemContainer {
+    width: 2490px;
+    height: min-content;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row
+}
+
+#menuItemContainer {
+	background-color: transparent;
+	height: 50px;
+    opacity: 1;
+}
+
+.menBtnIcn {
+	opacity: 0;
+}
+
+.menBtnIcn:hover {
+	opacity: 0;
+}
+
+#subLogoButtons {
+    position: absolute;
+    bottom: 125px;
+    left: 50%;
+    transform: translate(-50%,0) scale(.95);
+}
+
+#subLogoButtons>.button {
+    padding-left: 220px;
+    padding-right: 220px;
+    width: 150px;
+}
+
+#customizeButton {
+	top: 40px;
+}
+
+#accManagerBtn {
+	top: -996px;
+	left: -2525px;
+}
+
+#policeButton {
+	top: 40px;
+}
+
+.menuItem .menuItemTitle {
+  margin-top: 0px;
+  color: var(--white);
+  font-size: 0px !important;
+}
+
+.menuItem:hover .menuItemTitle {
+  margin-top: 0px;
+  color: var(--white);
+  font-size: 0px !important;
+}
+
+#menuItemContainer {
+  top: initial;
+  left: 1200px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  background: var(--trans);
+  height: max-content;
+}
+.menuItem {
+  margin-right: 0px;
+  padding: 10px 20px;
+  flex-direction: row;
+  transform: translate(10px, -10px);
+}
+
+#menuBtnExit:before {
+	content: 'RAGE QUIT';
+	color: #f10;
+	font-size: 30px;
+}
+
+#menuBtnProfile:before {
+	content: 'Profile';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnShop:before {
+	content: 'Shop';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnChall:before {
+	content: 'Challenges';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnSocial:before {
+	content: 'Social';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnMaps:before {
+	content: 'Games';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnMods:before {
+	content: 'Mods';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnSettings:before {
+	content: 'Settings';
+	color: #fff;
+	font-size: 18px;
+}
+
+#menuBtnProfile {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnShop {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnChall {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnSocial {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnMaps {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnMods {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnSettings {
+	color: transparent;
+	margin-right: -60px
+}
+
+#menuBtnExit {
+    color: transparent !important;
+}
+
+.menuItem {
+    color: #fff;
+    flex-grow: 1;
+    display: flex;
+    transition: all .1s;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    text-align: center;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+#faceItIconM {
+	display: none;
+}
+
+#menuBtnHost {
+	opacity: 0.865;
+}
+
+#menuBtnHost:hover {
+	opacity: 1;
+}
+
+#menuBtnBrowser {
+	opacity: 0.865;
+}
+
+#menuBtnBrowser:hover {
+	opacity: 1;
+}
+
+#menuBtnRanked {
+	opacity: 0.865;
+}
+
+#menuBtnRanked:hover {
+	opacity: 1;
+}
+
+#inviteButton {
+	opacity: 0.865;
+}
+
+#inviteButton:hover {
+	opacity: 1;
+}
+
+#menuBtnJoin {
+	opacity: 0.865;
+}
+#menuBtnJoin:hover {
+	opacity: 1;
+}
+
